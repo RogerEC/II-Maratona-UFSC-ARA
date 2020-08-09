@@ -1,0 +1,8 @@
+# Ignorar os executáveis
+*.exe
+# Ignora os arquivos objetos
+*.o
+# Ignora os logs
+*.log
+# Ignora os arquivos de rascunho dos enunciados das questões
+*.docx
