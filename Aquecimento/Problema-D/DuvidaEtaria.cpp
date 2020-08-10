@@ -11,13 +11,13 @@ int main(){
     string nome, hoje, nasc;
     int ano_hoje, ano_nasc, idade;
 
-    cin>>nome;
+    getline(cin, nome);
     cin>>hoje;
     cin>>nasc;
 
     ano_hoje = atoi(hoje.substr(6, 4).c_str());
     ano_nasc = atoi(nasc.substr(6, 4).c_str());
-    
+
     idade = ano_hoje - ano_nasc;
 
     hoje = hoje.substr(3,2) + hoje.substr(0, 2);
