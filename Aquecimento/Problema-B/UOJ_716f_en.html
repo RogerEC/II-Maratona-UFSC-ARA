@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI B - Seeking New Followers</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problem B - Seeking New Followers" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://resources.urionlinejudge.com.br/repository/contest.css" />
+		<script type="text/javascript" src="https://resources.urionlinejudge.com.br/judge/js/math-jax/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+	</head>
+	<body>
+		<div class="header">
+			<span>URI Online Judge | B</span>
+			<h1>Seeking New Followers</h1>
+			<div>
+				<p>By Roger Eliodoro Condras, UFSC-ARA <img src='https://resources.urionlinejudge.com.br/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Morgana loves to play and stream her plays. Several years ago she had created a page and eventually, whenever she had free time, she transmitted her games.</p>
+
+<p>She decided to dive into the world of streaming and started broadcasting every day. As time passes, her channel has been gaining more followers every day and she receives an email from the platform informing that reaching some criteria on her page she can enter the partner program and gain even more visibility on her channel.</p>
+
+<p>To be able to join, it is necessary to reach a minimum number of followers that she has not yet reached. Analyzing the metrics on her page, she noticed something interesting. The number of new subscribers to your channel in one day is always equal to the average subscriber ceiling in the previous 30 days.</p>
+
+<p>Based on this information, she would like to estimate how many days it will take for her to reach the minimum number of subscribers in order to participate in the platform's partner program. Do you get to help her by writing a program that calculates that response?</p>
+			</div>
+			<h2>Input</h2>
+
+			<div class="input">
+				<p>The entry has two lines. In the first line there are two integers <strong>N</strong>&nbsp;abd&nbsp;<strong>M</strong> (1&nbsp;<span class="math-tex">\(\leq\) <strong>N</strong> &lt; <strong>M</strong>&nbsp;<span class="math-tex">\(\leq\) 10<sup>9</sup>) separated by a space, the current number of followers on the page and the minimum number of followers required to associate with the platform respectively.</p>
+
+<p>The second line has 30 integers <strong>D<sub>i</sub></strong> (1&nbsp;<span class="math-tex">\(\leq\)&nbsp;<strong>D<sub>i</sub></strong>&nbsp;<span class="math-tex">\(\leq\) 10<sup>5</sup>) separated by a space, and the i-th number of that sequence represents the number of subscribers on day i of the last 30 days. The first number in this list represents the oldest record and the rest follow the chronological order until the last day that represents the most recent record.</p>
+			</div>
+
+			<h2>Output</h2>
+
+			<div class="output">
+				<p>A line containing a single integer. The number of days required to reach the minimum number of followers to join the platform.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Input Sample</td>
+						<td>Output Sample</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>100 126<br />
+5 5 5 5 5 5 5 5 5 5&nbsp;​​​​​​​5 5 5 5 5 5 5 5 5 5&nbsp;​​​​​​​5 5 5 5 5 5 5 5 5 5</p>
+
+						</td>
+						<td>
+							<p>6</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<div class="both"></div>
+
+			<p class="footer">
+				
+			</p>
+		</div>
+	</body>
+</html>
