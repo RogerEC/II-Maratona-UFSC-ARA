@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI C - Copiando e Colando Código</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema C - Copiando e Colando Código" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://resources.urionlinejudge.com.br/repository/contest.css" />
+		
+	</head>
+	<body>
+		<div class="header">
+			<span>URI Online Judge | C</span>
+			<h1>Copiando e Colando Código</h1>
+			<div>
+				<p>Por Roger Eliodoro Condras, UFSC-ARA <img src='https://resources.urionlinejudge.com.br/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Durante a pandemia, com a suspensão temporária do calendário acadêmico na UFSC, Lucas tem aproveitado o tempo livre para fazer vários cursos online e aprender a usar novas tecnologias e bibliotecas de programação.</p>
+
+<p>Recentemente ele participou de um bootcamp gratuito sobre o uso de Node.js e da biblioteca ReactJS e ficou apaixonado. Ele gostou tanto que ele decidiu portar um site que ele havia criado em HTML para esse novo formato.</p>
+
+<p>Para sorte de Lucas, ele pode reaproveitar boa parte dos scripts em HTML, mas algumas partes deixam de ser necessárias, já que o Node.js e + ReactJS passam a gerá-las automaticamente. Como são vários arquivos para ele analisar e dar control+c, control+v nos códigos, ele gostaria da sua ajuda para agilizar o processo.</p>
+
+<p>Dado um arquivo em HTML, você deve escrever um programa que retorne apenas o conteúdo que esteja entre as tags "&lt;body&gt;" e "&lt;/body&gt;", todo resto deve ser ignorado.</p>
+
+<p>Como o Lucas é um cara caprichoso, o código está devidamente indentado. Nas linhas de abertura e fechamento da tag body não há mais nada além da própria tag e os espaços de indentação.</p>
+			</div>
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>A entrada possuí várias linhas, as linhas do arquivo HTML fornecido pelo Lucas, e termina com EOF. Cada linha consiste em uma sequência de caracteres imprimíveis da Tabela ASCII e é garantido que nenhuma delas possuí mais de 1.000 caracteres ou está em branco.</p>
+
+<p>É garantido que as tags de abertura e fechamento do body, "&lt;body&gt;" e "&lt;/body&gt;" respectivamente, aparecem apenas uma vez em todo o arquivo de entrada.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Você deve imprimir todas as linhas que estejam entre as tags "&lt;body&gt;" e "&lt;/body&gt;" sem incluir elas e mantendo a exata formatação original do arquivo.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Meu primeiro&nbsp;programa&nbsp;em&nbsp;HTML&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello&nbsp;World!&lt;/h1&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br />
+&lt;/html&gt;</p>
+
+						</td>
+						<td>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello&nbsp;World!&lt;/h1&gt;</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<div class="both"></div>
+
+			<p class="footer">
+				
+			</p>
+		</div>
+	</body>
+</html>
