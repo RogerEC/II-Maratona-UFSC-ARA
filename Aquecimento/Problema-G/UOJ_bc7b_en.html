@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI G - G of Graph</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problem G - G of Graph" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://resources.urionlinejudge.com.br/repository/contest.css" />
+		<script type="text/javascript" src="https://resources.urionlinejudge.com.br/judge/js/math-jax/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+	</head>
+	<body>
+		<div class="header">
+			<span>URI Online Judge | G</span>
+			<h1>G of Graph</h1>
+			<div>
+				<p>By Roger Eliodoro Condras, UFSC-ARA <img src='https://resources.urionlinejudge.com.br/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>This problem was originally written for the first open contest I created here at URI last year, but due to an error with the test case files it cannot be included in the test in time. So it is only fair that now he is part of the warm-up for my second race. Below is the original text of the problem! :)</p>
+
+<p>Last week Tobias, Gabriel and Me were choosing the questions to compose the test, and then Gabriel declared "G de Grafo huh!" and I will not deny that the idea was great. After that I had the brilliant idea of ​​asking all the questions of the author's proof, and I regretted it a little. If resolving the issues is already difficult, generating test cases and creating validation codes can be even worse.</p>
+
+<p>I confess that I tried, but no idea seemed good to mix graphs with the strike, but as it is customary for questions in the marathon to have a long text that says nothing with nothing to introduce the problem, let's imagine some story.</p>
+
+<p>Let's say ... At the UFSC Campus here in Araranguá there are rooms. And between the rooms there are corridors. These corridors form paths that connect rooms with a certain length, and there may be more than one path that leaves one room to another. So far, no surprise, I am calling UFSC Campus Araranguá a graph, the apex rooms and the edge corridors. If the reader was attentive, he also noticed that the graph can have cycles and the edges are weighted. So far no surprise.</p>
+
+<p>Let's also say ... Well, I don't know. For some random reason or some conspiratorial force in the universe someone. It could be Tobias, or Gabriel, or both. This ... The two want to go through all the rooms of the Campus, starting and ending the route in the same room, without creating any cycle on the route and covering the shortest possible distance during the entire path. It is possible to go through the same room or corridor more than once if necessary. Why they want to do this is a mystery even to me, I have no creativity to come up with a good excuse.</p>
+
+<p>So, given the information in the graph, can you tell me which is the minimum path they need to take according to the restrictions described above? I hope so, otherwise your team will not win balloon on this issue. ;)</p>
+			</div>
+			<h2>Input</h2>
+
+			<div class="input">
+				<p>The first line of the entry contains two integers <strong>N</strong> (2&nbsp;<span class="math-tex">\(\leq\) <strong>N</strong> <span class="math-tex">\(\leq\)&nbsp;500) and <strong>M</strong> (1&nbsp;<span class="math-tex">\(\leq\) <strong>M</strong>&nbsp;<span class="math-tex">\(\leq\) 124750) that represent the number of rooms and the number of corridors on the UFSC-Araranguá campus respectively. In the second line, an integer <strong>O</strong> (1&nbsp;<span class="math-tex">\(\leq\) <strong>O</strong>&nbsp;<span class="math-tex">\(\leq\) <strong>N</strong>) indicating the room they will start and end the journey. Each of the next <strong>M</strong> lines is composed of three integers <strong>U</strong>, <strong>V</strong> (1&nbsp;<span class="math-tex">\(\leq\) <strong>U</strong>, <strong>V</strong>&nbsp;<span class="math-tex">\(\leq\) <strong>N</strong> e <strong>U</strong>&nbsp;<span class="math-tex">\(\neq\) <strong>V</strong>) and&nbsp;<strong>D</strong> (1&nbsp;<span class="math-tex">\(\leq\) <strong>D</strong>&nbsp;<span class="math-tex">\(\leq\) 500)&nbsp;that indicate that there is a <strong>D</strong>-length corridor that connects rooms <strong>U</strong> and <strong>V</strong>. It is always possible to use the corridor in both directions and it is guaranteed that there are no repeated edges at the entrance.</p>
+			</div>
+
+			<h2>Output</h2>
+
+			<div class="output">
+				<p>A single integer in a row. The minimum distance for Tobias and Gabriel to go through all the rooms without doing any cycle during the way, leaving and returning to the same room of origin.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Input Samples</td>
+						<td>Output Samples</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>5 6<br />
+3<br />
+1 2 15<br />
+1 3 10<br />
+2 3 1<br />
+2 4 5<br />
+4 5 20<br />
+3 4 3</p>
+
+						</td>
+						<td>
+							<p>68</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<div class="both"></div>
+
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+								<p>4 5<br />
+2<br />
+1 2 2<br />
+1 3 1<br />
+1 4 5<br />
+2 3 20<br />
+4 2 3</p>
+
+						</td>
+						<td>
+							<p>12</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="footer">
+				
+			</p>
+		</div>
+	</body>
+</html>
