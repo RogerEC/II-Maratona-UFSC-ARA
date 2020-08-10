@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI F - Escaping the Cell Phone</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problem F - Escaping the Cell Phone" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://resources.urionlinejudge.com.br/repository/contest.css" />
+		<script type="text/javascript" src="https://resources.urionlinejudge.com.br/judge/js/math-jax/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+	</head>
+	<body>
+		<div class="header">
+			<span>URI Online Judge | F</span>
+			<h1>Escaping the Cell Phone</h1>
+			<div>
+				<p>By Roger Eliodoro Condras, UFSC-ARA <img src='https://resources.urionlinejudge.com.br/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Ritcheli (and yes, that's his name) is a very nice guy and a great friend, but he has a serious problem. It takes a long time to respond to messages on social media. Being able to talk to him, even more so in these pandemic times, is an almost impossible mission.</p>
+
+<p>While he is too lazy to pick up his cell phone to reply to messages as they arrive, he is also lazy to spend hours reading accumulated messages after spending days running away from his cell phone.</p>
+
+<p>In an attempt to become a more active person on social networks and not let too many messages accumulate, he decided to adopt a new criterion for responding to messages: the number of lines of messages received. This is because the number of messages received is not a very accurate measure of the time he will spend reading the messages. It can receive 20 messages of 100 lines each and take much longer to read than if it had received 50 messages with one line each.</p>
+
+<p>But there is a problem with all of this. Applications report only the number of messages received, not the number of lines accumulated from unread messages. So, Ritcheli would like your help to write an algorithm that counts the lines of messages received and reports the total lines to him. Can you help him with this task?</p>
+
+<p>Some notes: Consider that each line of the message is always displayed with the same number of characters, the maximum number of characters that the mobile screen can display per line. When this number is exceeded, the remaining text is truncated and continues on the next line, regardless of whether the word is eventually cut in half. If the first character of the new line is a space, it is disregarded and the line starts at the next character other than a space. If a message ends in the middle of the line, with space left on that line, the next message starts on a new line, not in the middle of the previous line.</p>
+			</div>
+			<h2>Input</h2>
+
+			<div class="input">
+				<p>The first line of the entry has an integer <strong>N</strong> (10&nbsp;<span class="math-tex">\(\leq\) <strong>N</strong>&nbsp;<span class="math-tex">\(\leq\) 1000), the number of characters that can fit per line on Ritcheli's cell phone screen.</p>
+
+<p>The next lines have several strings and the reading of the file ends with EOF. Each line represents a message and is made up of printable characters from the ASCII Table. The length of each line does not exceed 10,000 characters, and the message does not begin or end with space characters.</p>
+			</div>
+
+			<h2>Output</h2>
+
+			<div class="output">
+				<p>A single line with an integer, the total number of lines that Ritcheli will have to read after computing all incoming messages.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Input Sample</td>
+						<td>Output Sample</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>10<br />
+Oi Ritch<br />
+Eh&nbsp;o Roger<br />
+Vc&nbsp;ta&nbsp;vivo ainda? Faz dias&nbsp;q vc n me respondeu mais :(:(:(:(:(</p>
+
+						</td>
+						<td>
+							<p>8</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<div class="both"></div>
+
+			<p class="footer">
+				
+			</p>
+		</div>
+	</body>
+</html>

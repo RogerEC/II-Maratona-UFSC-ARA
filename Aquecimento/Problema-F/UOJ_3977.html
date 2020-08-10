@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI F - Fugindo do Celular</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema F - Fugindo do Celular" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://resources.urionlinejudge.com.br/repository/contest.css" />
+		<script type="text/javascript" src="https://resources.urionlinejudge.com.br/judge/js/math-jax/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+	</head>
+	<body>
+		<div class="header">
+			<span>URI Online Judge | F</span>
+			<h1>Fugindo do Celular</h1>
+			<div>
+				<p>Por Roger Eliodoro Condras, UFSC-ARA <img src='https://resources.urionlinejudge.com.br/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>O Ritcheli (e sim, esse é mesmo o nome dele) é um cara muito legal e um ótimo amigo, mas ele tem um sério problema. Ele demora muito para responder mensagens nas redes sociais. Conseguir falar com ele, ainda mais nesses tempos de pandemia, é uma missão quase impossível.</p>
+
+<p>Ao mesmo tempo que ele tem preguiça de pegar o celular para responder as mensagens na hora que elas chegam, ele também tem preguiça de passar horas lendo mensagens acumuladas depois de passar dias fugindo do celular.</p>
+
+<p>Na tentativa de se tornar uma pessoa mais ativa nas redes sociais e não deixar muitas mensagens acumularem, ele resolveu adotar um novo critério para responder as mensagens: o número de linhas das mensagens recebidas. Isso porque apenas o número de mensagens recebidas não é uma medida muito precisa do tempo que ele irá gastar lendo as mensagens. Ele pode receber 20 mensagens de 100 linhas cada uma e levar muito mais tempo para ler do que se tivesse recebido 50 mensagens com uma linha cada.</p>
+
+<p>Mas existe um problema nisso tudo. Os aplicativos informam apenas o número de mensagens recebidas, não o número de linhas acumulados das mensagens não lidas. Por isso, o Ritcheli gostaria da sua ajuda para escrever um algoritmo que conte as linhas das mensagens recebidas e informe o total de linhas para ele. Você pode ajudá-lo nessa tarefa?</p>
+
+<p>Algumas observações: Considere que cada linha da mensagem é exibida sempre com o mesmo número de caracteres, o número máximo de caracteres que a tela do celular pode exibir por linha. Ao exceder esse número o texto restante é truncado e continua na próxima linha, independente da palavra eventualmente ser cortada ao meio. Caso o primeiro caractere da nova linha seja um espaço, esse é desconsiderado e a linha começa no próximo caractere diferente de espaço. Caso uma mensagem acabe no meio da linha, com espaço sobrando nessa linha, a próxima mensagem inicia em uma nova linha, não no meio da linha anterior.</p>
+			</div>
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>A primeira linha da entrada possuí um inteiro <strong>N</strong> (10&nbsp;<span class="math-tex">\(\leq\) <strong>N</strong>&nbsp;<span class="math-tex">\(\leq\) 1000), o número de caracteres que cabem por linha na tela do celular do Ritcheli.</p>
+
+<p>As próximas linhas possuem várias strings e a leitura do arquivo termina com EOF. Cada linha representa uma mensagem e é composta por caracteres imprimíveis da Tabela ASCII. O comprimento de cada linha não excede 10.000 caracteres, e a mensagem nem começa ou termina com caracteres de espaço.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Uma única linha com inteiro, o número total de linhas que Ritcheli terá que ler após computar todas as mensagens recebidas.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>10<br />
+Oi Ritch<br />
+Eh&nbsp;o Roger<br />
+Vc&nbsp;ta&nbsp;vivo ainda? Faz dias&nbsp;q vc n me respondeu mais :(:(:(:(:(</p>
+
+						</td>
+						<td>
+							<p>8</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<div class="both"></div>
+
+			<p class="footer">
+				
+			</p>
+		</div>
+	</body>
+</html>

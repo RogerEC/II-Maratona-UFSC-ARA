@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI E - Excel Bugado</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema E - Excel Bugado" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://resources.urionlinejudge.com.br/repository/contest.css" />
+		<script type="text/javascript" src="https://resources.urionlinejudge.com.br/judge/js/math-jax/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+	</head>
+	<body>
+		<div class="header">
+			<span>URI Online Judge | E</span>
+			<h1>Excel Bugado</h1>
+			<div>
+				<p>Por Roger Eliodoro Condras, UFSC-ARA <img src='https://resources.urionlinejudge.com.br/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Enquanto o nosso aniversariante permutava balões, ele recebeu um e-mail de uma professora pedindo para enviar com urgência alguns dados estatísticos adicionais para incluir em relatório sobre um projeto do qual ele participa.</p>
+
+<p>Prontamente o Tobias abriu a planilha do Excel onde os dados estavam salvos para fazer as contas necessárias e enviar o mais rápido possível os dados solicitados. Quanto antes ele terminar essa tarefa, mais tempo sobrará para ele aproveitar o dia do seu aniversário.</p>
+
+<p>No Excel, cada coluna da planilha é indicada por letras. A primeira coluna é a letra “A”, a segunda coluna é a letra “B”, a terceira “C” e assim por diante até “Z”, onde a próxima coluna é “AA”. Depois vem “AB”, “AC”, “AD”, ..., até “AZ”. Daí vem “BA”, “BB”, “BC”, ..., e assim por diante até “ZZ”. Após vem “AAA”, “AAB”, ..., até chegar em “XFD” que é a última coluna da planilha. (Sim, existe uma última coluna! Desculpa destruir o sonho de quem achava que ela era infinita).</p>
+
+<p>No Excel, existem ainda, fórmulas que realizam operações específicas e podem receber como parâmetros células da planilha. Uma dessas fórmulas é a =COL(), que se chamada sem parâmetros retorna a posição numérica da coluna em que ela foi chamada. Por exemplo, chamar a função =COL() em alguma linha qualquer da coluna “A” retornaria 1. Chamar na coluna “D” retornaria 4, na coluna “Z” retornaria 26, na coluna “AB” retornaria 28 e assim por diante.</p>
+
+<p>Ao tentar realizar as operações necessárias para recuperar os dados solicitados, Tobias notou que a fórmula =COL() não estava funcionando.</p>
+
+<p>Você consegue ajudá-lo a resolver esse problema escrevendo um algoritmo que dado o conjunto de letras que identifica a coluna retorne à posição numérica dela? Como ele está com um pouco de pressa em terminar isso, é possível que digite por engano algum código de coluna que não exista (fora do intervalo “A” – “XFD”), nesse caso você deve avisá-lo disso.</p>
+			</div>
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>Você deverá responder vários casos de teste. Cada caso de teste possuí uma linha com uma string <strong>S</strong> (1&nbsp;<span class="math-tex">\(\leq\) |<strong>S</strong>| <span class="math-tex">\(\leq\)&nbsp;10) que contém a sequência de letras que identificam a coluna. É garantido que <strong>S</strong> possuí apenas letras maiúsculas ('A' - 'Z').</p>
+
+<p>A entrada termina com EOF.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste imprima um inteiro contendo o valor do índice numérico daquela coluna. Caso o código da coluna informado não esteja dentro dos limites do Excel, imprima <strong>“Essa coluna nao existe Tobias!”</strong> (sem aspas).</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>A<br />
+D<br />
+Z<br />
+ZZZ<br />
+AB</p>
+
+						</td>
+						<td>
+							<p>1<br />
+4<br />
+26<br />
+Essa coluna nao existe Tobias!<br />
+28</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<div class="both"></div>
+
+			<p class="footer">
+				
+			</p>
+		</div>
+	</body>
+</html>
