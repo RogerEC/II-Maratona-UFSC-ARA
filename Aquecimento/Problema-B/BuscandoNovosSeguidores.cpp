@@ -5,6 +5,9 @@
 using namespace std;
 
 int main(){
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+
     queue<int> seguidores_dia;
     int N, M, contador=0, aux;
     double soma=0.0;
