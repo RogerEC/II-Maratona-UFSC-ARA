@@ -11,8 +11,8 @@ int main(){
     
     vector<long long int> fatorial;
     map<string, int> baloes;
-    int N;
-    long long int B, aux=1, soma=0;
+    int N, B, soma=0;
+    long long int aux=1;
     string cor;
 
     fatorial.push_back(1);
