@@ -23,7 +23,7 @@ int main(){
 
     for(int k=21; k<26; k++){ // loop para gerar 26 arquivos com casos de teste com entradas aleatórias
 
-        limite=250000;
+        limite=200000;
         for(int i=0; i<limite; i++){
             tam=rand()%3+1;
             for(int j=0; j<tam; j++)
