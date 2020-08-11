@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Meu primeiro programa em HTML</title>
+    </head>
+    <body>
+Algum texto solto no meio da tag
+De abertura e fechamento
+da tag         body
+E alguns simbolos     
+({[&*%$#@]})
+     teste
+    </body>
+</html>
