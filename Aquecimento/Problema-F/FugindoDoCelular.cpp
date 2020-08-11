@@ -7,22 +7,22 @@ int main(){
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     
-    int resp=0, limite;
+    int resp=0, limite, pos;
     string mensagem;
 
     cin>>limite;
     while(getline(cin, mensagem)){
-        if(mensagem.size()<=limite){
+        pos=0;
+        while(pos<mensagem.size()){
             resp++;
-            continue;
-        }else{
-            for(int pos=0; pos<mensagem.size(); pos+=limite){
+            if(pos+limite >= mensagem.size()){
+                break;
+            }else{
+                pos+=limite;
                 while(mensagem[pos]==' ')
                     pos++;
-                resp++;
             }
         }
-        cout<<resp<<endl;
     }
 
     cout<<resp<<endl;
