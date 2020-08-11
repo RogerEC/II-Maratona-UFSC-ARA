@@ -6,6 +6,8 @@
 *.log
 # Ignora os arquivos de rascunho dos enunciados das questões
 *.docx
+# Ignorar os arquivos .zip gerados para o envio das questões.
+*.zip
 ### VisualStudioCode ###
 .vscode/*
 *.code-workspace
