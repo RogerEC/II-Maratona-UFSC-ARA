@@ -19,11 +19,11 @@ int main(){
     fstream entrada, saida;
     int limite, N, M, pos, resp;
     string mensagem, aux;
-    const int LIM1 = 5000; // limite do número de mensagens
+    const int LIM1 = 3000; // limite do número de mensagens
     const int LIM2 = 990; // Limite da quantidade de caracteres exibidos na tela do celular
     const int LIM3 = 10000; // Limite da quantidade de caracteres por linha da mensagem recebido
 
-    for(int k=23; k<26; k++){ // loop para gerar 26 arquivos com casos de teste com entradas aleatórias
+    for(int k=24; k<25; k++){ // loop para gerar 26 arquivos com casos de teste com entradas aleatórias
         entrada.open("../Problema-F/IOs/"+nome+"-"+letra[k]+".in", fstream::out);
         saida.open("../Problema-F/IOs/"+nome+"-"+letra[k]+".sol", fstream::out);
         //Gerando um arquivo os dados de entrada gerados aleatoriamente
