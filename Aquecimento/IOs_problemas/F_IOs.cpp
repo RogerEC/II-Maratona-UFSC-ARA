@@ -39,7 +39,7 @@ int main(){
                         if(j==0 || j==(M-1)){
                             do{
                                 aux=base[rand()%base.size()];
-                            }while(aux!=" ");
+                            }while(aux==" ");
                             mensagem += aux;
                         }else{
                             mensagem+=base[rand()%base.size()];
